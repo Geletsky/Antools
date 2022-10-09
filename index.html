@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<title>Antools</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class='header__container'>
+				<a href="#" class="header__logo logo-header">
+					<img src="img/header/logo.png" alt="Логотип">
+					<div class="logo-header__text">antools.</div>
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li>
+								<a href="#" class="menu__link _active">Home</a>
+							</li>
+							<li>
+								<a href="#" class="menu__link">Categories</a>
+								<div class="menu__arrow arrow"></div>
+								<ul class="sub-menu__list">
+									<div class="sub-menu__bg">
+										<li>
+											<a href="#" class="sub-menu__link">Design</a>
+										</li>
+										<li>
+											<a href="#" class="sub-menu__link">Development</a>
+										</li>
+									</div>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="menu__link">My Collections</a>
+							</li>
+							<li>
+								<a href="#" class="menu__link">Blog</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="menu__authn authn">
+						<a href="#" class="authn-login__link">Login</a>
+						<a href="#" class="authn-sign__button button">Sign Up</a>
+						<div class="authn__popup popup-login popup" id="popup-login">
+							<div class="popup__content">
+								<div class="popup__body">
+									<div class="popup__close">
+										<div class="popup__icon popup__icon-login"></div>
+									</div>
+									<div class="popup__title title">Login</div>
+									<div class="popup__input input">
+										<iconify-icon icon="ant-design:user-outlined" class="icon"></iconify-icon>
+										<input type="text" id="s-username" required class="input__text">
+										<label for="s-username" class="popup__label">Username</label>
+									</div>
+									<div class="popup__input input">
+										<iconify-icon icon="akar-icons:key" class="icon"></iconify-icon>
+										<input type="password" id="s-password" required class="input__text">
+										<label for="s-password" class="popup__label">Password</label>
+									</div>
+									<a href="#" class="popup__button button">Sign In</a>
+									<div class="popup__footer">
+										<a href="#" class="popup__text popup__text-forgot">Forgot password?</a>
+										<a href="#" class="popup__text popup__text-sign">Sign Up</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="authn__popup popup-pass popup" id="popup-pass">
+							<div class="popup__content">
+								<div class="popup__body">
+									<div class="popup__close">
+										<div class="popup__icon popup__icon-pass"></div>
+									</div>
+									<div class="popup__title title">Forgot<br>Password</div>
+									<div class="popup__input input">
+										<iconify-icon icon="carbon:email" class="icon"></iconify-icon>
+										<input type="text" id="email" required class="input__text">
+										<label for="email" class="popup__label">Email</label>
+									</div>
+									<div class="popup__text popup__text-pass">You will receive a link to create a new password
+										via email</div>
+									<a href="#" class="popup__button button">Send</a>
+								</div>
+							</div>
+						</div>
+						<div class="authn__popup popup-sign popup" id="popup-sign">
+							<div class="popup__content">
+								<div class="popup__body">
+									<div class="popup__close">
+										<div class="popup__icon popup__icon-sign"></div>
+									</div>
+									<div class="popup__title title">Sign</div>
+									<div class="popup__input input">
+										<iconify-icon icon="ant-design:user-outlined" class="icon"></iconify-icon>
+										<input type="text" id="r-username" required class="input__text">
+										<label for="r-username" class="popup__label">Username</label>
+									</div>
+									<div class="popup__input input">
+										<iconify-icon icon="akar-icons:key" class="icon"></iconify-icon>
+										<input type="password" id="r-password" required class="input__text">
+										<label for="r-password" class="popup__label">Password</label>
+									</div>
+									<div class="popup__input input">
+										<iconify-icon icon="carbon:email" class="icon"></iconify-icon>
+										<input type="text" id="s-email" required class="input__text">
+										<label for="s-email" class="popup__label">Email</label>
+									</div>
+									<a href="#" class="popup__button button">Sign In</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="awesome-tools">
+				<div class='awesome-tools__container'>
+					<div class="awesome-tools__content">
+						<h1 class="awesome-tools__title title">Awesome tools for
+							Designer & Developer<span>.</span></h1>
+						<div class="awesome-tools__subtitle subtitle">Antool is a web collection of information on paid or
+							free Design and Development tools</div>
+						<div class="awesome-tools__input input">
+							<div class="awesome-tools__search input__search">
+								<iconify-icon class="icon__search" icon="bx:search"></iconify-icon>
+								<input type="text" placeholder="find more than 430+ tools...">
+							</div>
+							<a href="#" class="awesome-tools__button button">Search</a>
+						</div>
+						<div class="awesome-tools__icons">
+							<a href="https://www.facebook.com" class="icon__facebook social-icon">
+								<iconify-icon icon="fa6-brands:facebook-f"></iconify-icon>
+							</a>
+							<a href="https://www.instagram.com" class="icon__instagram social-icon">
+								<iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
+							</a>
+							<a href="https://twitter.com/" class="icon__twitter social-icon">
+								<iconify-icon icon="akar-icons:twitter-fill"></iconify-icon>
+							</a>
+						</div>
+					</div>
+					<div class="awesome-tools__media">
+						<img src="img/header/bg.png" alt="Изображение">
+					</div>
+				</div>
+			</section>
+			<section class="popular-tools">
+				<div class='popular-tools__container'>
+					<div class="popular-tools__content">
+						<div class="popular-tools__title title">Most Popular Tools</div>
+						<div class="popular-tools__subtitle subtitle">Tools for the best Designers and Developers
+							most popularly used in the world</div>
+					</div>
+					<div class="popular-tools__cards cards">
+						<div class="cards-popular-tools__items">
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/01.png" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">FIGMA</div>
+										<div class="cards-popular-tools__subtitle">Free</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.figma.com/" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/04.png" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Notion</div>
+										<div class="cards-popular-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.notion.so" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+						<div class="cards-popular-tools__items">
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/02.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Sketch</div>
+										<div class="cards-popular-tools__subtitle">Trial & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.sketch.com/" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/05.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Slack</div>
+										<div class="cards-popular-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://slack.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+						<div class="cards-popular-tools__items">
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/03.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">VS Code</div>
+										<div class="cards-popular-tools__subtitle">Free</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://code.visualstudio.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="cards-popular-tools__item" id="card">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/06.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Invision</div>
+										<div class="cards-popular-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.invisionapp.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popular-tools__cards cards cards-more">
+						<div class="cards-popular-tools__items">
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/01.png" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">FIGMA</div>
+										<div class="cards-popular-tools__subtitle">Free</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.figma.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/04.png" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Notion</div>
+										<div class="cards-popular-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.notion.so" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+						<div class="cards-popular-tools__items">
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/02.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Sketch</div>
+										<div class="cards-popular-tools__subtitle">Trial & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.sketch.com/" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/05.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Slack</div>
+										<div class="cards-popular-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://slack.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+						<div class="cards-popular-tools__items">
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/03.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">VS Code</div>
+										<div class="cards-popular-tools__subtitle">Free</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://code.visualstudio.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="cards-popular-tools__item">
+								<div class="cards-popular-tools__header">
+									<img src="img/awesome-tools/06.svg" alt="Изображение" class="cards-popular-tools__img">
+									<div class="cards-popular-tools__text">
+										<div class="cards-popular-tools__title">Invision</div>
+										<div class="cards-popular-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="cards-popular-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="cards-popular-tools__footer">
+									<div class="cards-popular-tools__icons">
+										<a href="#" class="cards-popular-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="cards-popular-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="https://www.invisionapp.com" class="cards-popular-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popular-tools__load-more">
+						<a href="#card" class="popular-tools__button button">
+							<span>Load more</span>
+							<span>Hide less</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="brands">
+				<div class='brands__container'>
+					<div class="brands__content">
+						<div class="brands__title">Trusted more than 150+ brand</div>
+						<div class="brands__logos">
+							<div class="brands__logos-01">
+								<img src="img/brands/01.png" alt="Изображение">
+								<img src="img/brands/02.png" alt="Изображение">
+							</div>
+							<div class="brands__logos-02">
+								<img src="img/brands/03.png" alt="Изображение">
+								<img src="img/brands/04.png" alt="Изображение">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="newcomer-tools">
+				<div class='newcomer-tools__container'>
+					<div class="newcomer-tools__content">
+						<div class="newcomer-tools__title title">Newcomer Tools</div>
+						<div class="newcomer-tools__subtitle subtitle">Wow! see the latest update of the most recommended
+							tools from reliable designers and developers</div>
+						<a href="#" class="newcomer-tools__button button">Explore more</a>
+					</div>
+					<div class="newcomer-tools__cards">
+						<div class="newcomer-tools__items">
+							<div class="newcomer-tools__item item-newcomer-tools">
+								<div class="item-newcomer-tools__header">
+									<img src="img/newcomer-tools/01.png" alt="Изображение">
+									<div class="item-newcomer-tools__text">
+										<div class="item-newcomer-tools__title">Zeplin</div>
+										<div class="item-newcomer-tools__subtitle">Free & Paid</div>
+									</div>
+								</div>
+								<div class="item-newcomer-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="item-newcomer-tools__footer">
+									<div class="item-newcomer-tools__icons">
+										<a href="#" class="item-newcomer-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="item-newcomer-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="#" class="item-newcomer-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="newcomer-tools__item item-newcomer-tools">
+								<div class="item-newcomer-tools__header">
+									<img src="img/newcomer-tools/02.png" alt="Изображение">
+									<div class="item-newcomer-tools__text">
+										<div class="item-newcomer-tools__title">PHPStorm</div>
+										<div class="item-newcomer-tools__subtitle">Free</div>
+									</div>
+								</div>
+								<div class="item-newcomer-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="item-newcomer-tools__footer">
+									<div class="item-newcomer-tools__icons">
+										<a href="#" class="item-newcomer-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="item-newcomer-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="#" class="item-newcomer-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+						<div class="newcomer-tools__items">
+							<div class="newcomer-tools__item item-newcomer-tools">
+								<div class="item-newcomer-tools__header">
+									<img src="img/newcomer-tools/03.png" alt="Изображение">
+									<div class="item-newcomer-tools__text">
+										<div class="item-newcomer-tools__title">Toolbox</div>
+										<div class="item-newcomer-tools__subtitle">Free</div>
+									</div>
+								</div>
+								<div class="item-newcomer-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="item-newcomer-tools__footer">
+									<div class="item-newcomer-tools__icons">
+										<a href="#" class="item-newcomer-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="item-newcomer-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="#" class="item-newcomer-tools__button button">Visit</a>
+								</div>
+							</div>
+							<div class="newcomer-tools__item item-newcomer-tools">
+								<div class="item-newcomer-tools__header">
+									<img src="img/newcomer-tools/04.png" alt="Изображение">
+									<div class="item-newcomer-tools__text">
+										<div class="item-newcomer-tools__title">Procreate</div>
+										<div class="item-newcomer-tools__subtitle">Paid</div>
+									</div>
+								</div>
+								<div class="item-newcomer-tools__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</div>
+								<div class="item-newcomer-tools__footer">
+									<div class="item-newcomer-tools__icons">
+										<a href="#" class="item-newcomer-tools__favorite">
+											<iconify-icon icon="ant-design:heart-filled"></iconify-icon>
+										</a>
+										<a href="#" class="item-newcomer-tools__download">
+											<iconify-icon icon="akar-icons:folder-add"></iconify-icon>
+										</a>
+									</div>
+									<a href="#" class="item-newcomer-tools__button button">Visit</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="slider">
+				<div class='slider__container'>
+					<div class="slider__block swiper">
+						<div class="slider__wrapper swiper-wrapper">
+							<div class="slider__slide swiper-slide">
+								<div class="slider__card card-slider">
+									<div class="card-slider__img">
+										<img src="img/slider/01.png" alt="Изображение">
+										<div class="card-slider__img-name">
+											<div class="img__name">Ronald Richards</div>
+											<div class="img__post">Product Manager</div>
+										</div>
+									</div>
+									<div class="card-slider__content">
+										<div class="card-slider__text">Incididunt cillum do sint sint enim ullamco id deserunt
+											mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit
+											labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt
+											consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non
+											laboris id qui ad.</div>
+										<div class="card-slider__quot">
+											<img src="img/slider/02.png" alt="Изображение">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__slide swiper-slide">
+								<div class="slider__card card-slider">
+									<div class="card-slider__img">
+										<img src="img/slider/01.png" alt="Изображение">
+										<div class="card-slider__img-name">
+											<div class="img__name">Ronald Richards</div>
+											<div class="img__post">Product Manager</div>
+										</div>
+									</div>
+									<div class="card-slider__content">
+										<div class="card-slider__text">Incididunt cillum do sint sint enim ullamco id deserunt
+											mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit
+											labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt
+											consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non
+											laboris id qui ad.</div>
+										<div class="card-slider__quot">
+											<img src="img/slider/02.png" alt="Изображение">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__slide swiper-slide">
+								<div class="slider__card card-slider">
+									<div class="card-slider__img">
+										<img src="img/slider/01.png" alt="Изображение">
+										<div class="card-slider__img-name">
+											<div class="img__name">Ronald Richards</div>
+											<div class="img__post">Product Manager</div>
+										</div>
+									</div>
+									<div class="card-slider__content">
+										<div class="card-slider__text">Incididunt cillum do sint sint enim ullamco id deserunt
+											mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit
+											labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt
+											consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non
+											laboris id qui ad.</div>
+										<div class="card-slider__quot">
+											<img src="img/slider/02.png" alt="Изображение">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider__buttons">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="slider__pagination swiper-pagination"></div>
+					</div>
+
+				</div>
+			</section>
+			<section class="contributor">
+				<div class='contributor__container'>
+					<div class="contributor__content">
+						<div class="contributor__title title">Become a contributor?</div>
+						<div class="contributor__subtitle subtitle">Join us and get tips & tricks to become a great Designer
+							and Developer</div>
+					</div>
+					<div class="contributor__input input">
+						<div class="contributor__search input__search">
+							<iconify-icon class="icon__search" icon="bx:search"></iconify-icon>
+							<input type="text" placeholder="Enter your email...">
+						</div>
+						<a href="#" class="contributor__button button">Join Us</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class='footer__container'>
+				<div class="footer__content">
+					<div class="footer__block-1 block-1">
+						<div class="block-1__logo block-1-logo">
+							<img src="img/header/logo.png" alt="Логотип">
+							<div class="block-1-logo__text">antools.</div>
+						</div>
+						<div class="block-1__subtext">Copyright 2021. Antools</div>
+						<div class="block-1__text block__text-1">Antool is a web collection of information on paid or free
+							Design and Development tools</div>
+					</div>
+					<div class="footer__block-2 block-2">
+						<div class="block-2__suptext block__suptext">Contact Us</div>
+						<ul class="block__list">
+							<li><a href="tel:+621987463" class="block-2__text block__text">+621987463</a></li>
+							<li><a href="#" class="block-2__text block__text">M Building, No.10 A</a></li>
+							<li><a href="mailto:antools@awesome.com" class="block-2__text block__text">antools@awesome.com</a></li>
+						</ul>
+					</div>
+					<div class="footer__block-3 block-3">
+						<div class="block-3__suptext block__suptext">Categories</div>
+						<a href="#" class="block-3__text block__text">Design</a>
+						<a href="#" class="block-3__text block__text">Development</a>
+					</div>
+					<div class="footer__block-4 block-4">
+						<div class="block-4__suptext block__suptext">Company Info</div>
+						<ul class="block__list">
+							<li><a href="#" class="block-4__text block__text">About</a></li>
+							<li><a href="#" class="block-4__text block__text">Our Partners</a></li>
+							<li><a href="#" class="block-4__text block__text">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
